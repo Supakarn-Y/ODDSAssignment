@@ -79,7 +79,7 @@ def funcF(text) : #String to Integer
 
 target = int(input("Enter number : "))
 
-if(target > 0) :
+if(target >= 0) :
     A = funcA(target)
     print("Funtion A :" ,A)
     B = funcB(A)
