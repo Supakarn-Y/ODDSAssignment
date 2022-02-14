@@ -1,5 +1,5 @@
 
-def funcA(number) :
+def funcA(number) :   #Integer to String
     text1 = str(number)
     result = ""
     for i in text1 :
@@ -9,7 +9,7 @@ def funcA(number) :
             result += "Odd" + i
     return result
 
-def funcB(text) :
+def funcB(text) : #String to String
     check = ["Odd","Even"]
     text1 = ""
     result = ""
@@ -26,7 +26,7 @@ def funcB(text) :
             i += 1
     return result
 
-def funcC(text) :
+def funcC(text) : #String to String
     text1 = ""
     for i in text :
         if(ord(i) >= 48 and ord(i) <= 57) :
@@ -35,7 +35,7 @@ def funcC(text) :
             text1 += str(ord(i))
     return text1
 
-def funcD(text) :
+def funcD(text) : #String to String
     check = ["DDO","NEVE"]
     text1 = ""
     result = ""
@@ -51,7 +51,7 @@ def funcD(text) :
             i += 2
     return result
 
-def funcE(text) :
+def funcE(text) : #String to String
     check = ["DDO","NEVE"]
     text1 = ""
     result = ""
@@ -62,18 +62,18 @@ def funcE(text) :
             text1 = text1[0].upper() + text1[1:].lower()
             text1 += text[i]
             result += text1
-            text1 = ""
-            i += 1
+            text1 = ""    
         else :
             text1 += text[i]
-            i += 1
+        i += 1
     return result
 
-def funcF(text) :
-    result =""
+def funcF(text) : #String to Integer
+    text1 =""
     for i in text :
         if(ord(i) >= 48 and ord(i) <= 57 ) :
-            result += i
+            text1 += i
+    result = int(text1)
     return result 
 
 
