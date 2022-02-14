@@ -1,5 +1,5 @@
 
-def funcA(number) :   #Integer to String
+def funcA(number) : #Integer to String
     text1 = str(number)
     result = ""
     for i in text1 :
@@ -79,7 +79,7 @@ def funcF(text) : #String to Integer
 
 target = int(input("Enter number : "))
 
-if(target >= 0) :
+if(target >= 0) : #check input is positive number
     A = funcA(target)
     print("Funtion A :" ,A)
     B = funcB(A)
